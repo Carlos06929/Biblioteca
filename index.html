@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    @section('content_header')
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Carnet|Estudiante</title>
+    {{-- <link rel="stylesheet" href="{{public_path('css/carnet.css')}}" type="text/css"> --}}
+
+    <style>
+       .card {
+            display: flex;
+            width: 9cm;
+            height: 6.5cm;
+            justify-content: center;
+            align-items: center;
+            background-image: url("./img/ci3.jpg") !important;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #datos {
+
+            margin-top: 10px;
+        }
+
+        #inf {
+            margin-top: 25px;
+        }
+
+        .image-wrapper {
+            position: relative;
+            padding-bottom: 10%;
+            width: 100px;
+            height: 100px;
+            margin-top: 40px;
+            margin-bottom: 5px;
+        }
+
+        .image-wrapper img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .cardreverso {
+            display: flex;
+            width: 9cm;
+            height: 6.5cm;
+            justify-content: center;
+            background-image: url("./img/ci3reverso.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="row" id="datos">
+                        <img src="{{public_path('images/'.$estudiante->image)}}" alt="" width="60" height="70">
+
+                        <div class="col" id="inf">
+                            <label for="" class="form-label">Registro:&nbsp;{{ $estudiante->registro }}</label><br>
+                            <label for="" class="form-label">CI: &nbsp;{{ $estudiante->ci }}</label><br>
+                            <label for="" class="form-label">Nombre(s):&nbsp; {{ $estudiante->nombre }}</label><br>
+                            <label class="form-label">Apellidos:&nbsp;{{ $estudiante->apellidos }}</label>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

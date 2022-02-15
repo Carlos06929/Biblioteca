@@ -1,0 +1,330 @@
+
+/*------------------------------------------*/
+/*	         /* 14. Screen shots ****/
+/*------------------------------------------*/
+
+ #screen {
+	padding: 90px 0 0 0;
+	background: #f1f1f1;
+}
+.ms-staff-carousel {
+	max-width: 1170px;
+	overflow: hidden;
+	position: relative;
+}
+.ms-staff-carousel .ms-view {
+	overflow: visible;
+	background-color: transparent;
+}
+.ms-staff-carousel .ms-nav-prev, .ms-staff-carousel .ms-nav-next {
+	background: url(../img/arrows.png) #f1f1f1 no-repeat -7px -57px;
+	width: 35px;
+	height: 40px;
+	left: -35px;
+	margin-top: -17px;
+	box-shadow: 0px 1px 0px 0px rgb(190, 190, 190);
+	position: absolute;
+	top: 50%;
+	cursor: pointer;
+}
+.ms-staff-carousel .ms-nav-next {
+	background-position: -6px -7px;
+	right: -35px;
+	left: auto;
+}
+.ms-staff-carousel .ms-staff-info {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	max-width: 600px;
+	margin-top: 30px;
+	min-height: 110px;
+	color: #222222;
+}
+.ms-staff-carousel .ms-staff-info h3 {
+	margin: 0;
+	padding-bottom: 10px;
+}
+.ms-staff-carousel .ms-staff-info h4 {
+	color: #777;
+	margin: 0;
+	padding-bottom: 15px;
+	text-transform: capitalize;
+}
+.ms-staff-carousel .ms-staff-info .email a {
+	text-decoration: none;
+	color: #a8e12a;
+}
+.ms-staff-carousel .ms-staff-info.email, .ms-staff-info p {
+	margin: 4px;
+	font-size: 11pt;
+}
+.ms-staff-carousel.ms-round .ms-slide-bgcont {
+	border-radius: 5000px;
+	border: solid 8px rgb(230, 230, 230);
+	margin: 0 -8px;
+}
+.ms-staff-carousel.ms-round .ms-nav-prev, .ms-staff-carousel.ms-round .ms-nav-next {
+	background-color: transparent;
+	box-shadow: none;
+	left: -45px;
+}
+.ms-staff-carousel.ms-round .ms-nav-next {
+	left: auto;
+	right: -45px
+}
+.ms-staff-carousel.ms-round .ms-slide-bgcont {
+	border-radius: 5000px;
+	border: solid 8px rgb(230, 230, 230);
+	margin: 0 -8px;
+}
+.team .team-box {
+	text-align: center;
+	padding: 5px;
+	border: 1px solid #eee;
+	border-radius: 4px;
+}
+.team .team-box img {
+	display: block;
+	margin: 0 auto;
+}
+.team .team-box h4 {
+	margin-bottom: 0px;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-top: 15px;
+}
+.team .team-box em {
+	display: block;
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+.ms-socials {
+}
+.ms-socials li {
+}
+.ms-socials li a {
+}
+.ms-socials li a i {
+	color: #fff;
+	display: block;
+	font-size: 20px;
+	height: 45px;
+	line-height: 45px;
+	-webkit-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	width: 45px;
+	box-shadow: 0 0 0 7px transparent;
+}
+.facebook {
+	background: #ff1e58;
+}
+.facebook:hover {
+	box-shadow: 0 0 0 0px #5D82D1
+}
+.twitter {
+	background: #ff1e58
+}
+.twitter:hover {
+	box-shadow: 0 0 0 0px #40BFF5
+}
+.youtube {
+	background: #ff1e58
+}
+.youtube:hover {
+	box-shadow: 0 0 0 0px #CC181E
+}
+.linkedin {
+	background: #ff1e58
+}
+.linkedin:hover {
+	box-shadow: 0 0 0 0px #238CC8
+}
+
+
+
+
+/*------------------------------------------*/
+/*	          /* 20.Navigation *** */
+/*------------------------------------------*/
+
+#nav {
+	background: #fff;
+	text-transform: uppercase;
+}
+.navbar-custom {
+	background: #fff;
+	color: #000;
+}
+.navbar-toggle {
+	color: #000;
+	font-size: 21px;
+}
+.navbar-brand {
+	margin-top: 11px;
+	 /* background: url(../img/logo.png) no-repeat;  */
+	width: 185px;
+	height: 70px;
+}
+.navbar {
+    border-radius: 4px;
+	 margin-bottom:1px;
+}
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background: #0592f4;
+}
+/* .navbar-nav > li:hover > a, .navbar-nav > li > a:focus {
+	color: #333;
+	background: none;
+} */
+.menu-b {
+	color: #000;
+	background: #000;
+}
+
+/*END NAVBAR*/
+
+/*------------------------------------------*/
+/*	   		/* 22.Section ** */
+/*------------------------------------------*/
+
+.section-title.center {
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+.section-title.black {
+	padding: 10px 0 0 0;
+	text-align: center;
+}
+.section-title h2, .section-title.center h2 {
+	font-weight: 100;
+	margin-bottom: 35px;
+	font-size: 45px;
+	margin-top: -22px;
+	padding-top: 45px;
+	letter-spacing: 1px;
+}
+.section-title.center hr {
+	height: 1px;
+	width: 100px;
+	text-align: center;
+	position: relative;
+	background: #000;
+	margin: 0 auto;
+	margin-bottom: 2px;
+	border: 3px dashed #fff;
+}
+.section-title.freelancer h2 {
+	font-weight: 200;
+	font-size: 40px;
+	max-width: 450px;
+	margin: 0 auto;
+	padding: 30px;
+	border: 3px solid #ffffff;
+	margin-bottom: 55px;
+}
+.section-title.about hr {
+	height: 4px;
+	width: 90px;
+	text-align: center;
+	position: relative;
+	background: #ffa211;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+.section-title.feature hr {
+	height: 4px;
+	width: 90px;
+	text-align: center;
+	position: relative;
+	background: #ffffff;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+.section-title.white hr {
+	height: 4px;
+	width: 90px;
+	text-align: center;
+	position: relative;
+	background: #ffffff;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+.section-title.black hr {
+	height: 4px;
+	width: 90px;
+	text-align: center;
+	position: relative;
+	background: #ffa211;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border: 0;
+}
+#app-download {
+	overflow: hidden;
+	padding: 110px 0px 0px 0px;
+}
+#app-download-i {
+	overflow: hidden;
+	padding: 110px 0px 80px 0px;
+
+}
+
+
+/*------------------------------------------*/
+/*	        /* 37.Preloader */
+/*------------------------------------------*/
+
+#preloader {
+	background: #fff none repeat scroll 0 0;
+	bottom: 0;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1800;
+}
+.no-js #preloader, .oldie #preloader {
+	display: none;
+}
+#loader {
+	height: 30%;
+	left: 47%;
+	margin: -30px 0 0 -30px;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	width: 30px;
+}
+#loader::before {
+ animation: 0.3s linear 0s normal none infinite running load;
+ border-color: #fdcb6e #283d50 #fdcb6e #283d50;
+ border-radius: 50%;
+ border-style: solid;
+ border-width: 3px;
+ content: "";
+ display: block;
+ height: 100px;
+ width: 100px;
+ justify-content: center;
+}
+@keyframes load {
+ 0% {
+ transform: rotate(0deg);
+}
+ 100% {
+ transform: rotate(360deg);
+}
+}
+@keyframes load {
+ 0% {
+ transform: rotate(0deg);
+}
+ 100% {
+ transform: rotate(360deg);
+}
+}

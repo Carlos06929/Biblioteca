@@ -1,0 +1,371 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #757575;
+    background: #ffffff;
+    font-family: 'open sans', sans-serif;
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #454545;
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    color: #fbaf32;
+    transition: .3s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #fbfcf9;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn.custom-btn {
+    padding: 12px 25px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #fbaf32;
+    border: 2px solid #fbaf32;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.btn.custom-btn:hover {
+    color: #fbaf32;
+    background: transparent;
+}
+
+.btn.custom-btn:focus,
+.form-control:focus,
+.custom-select:focus {
+    box-shadow: none;
+}
+
+.container-fluid {
+    max-width: 1366px;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #fbaf32;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 5px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top i {
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.back-to-top:hover {
+    background: #fbaf32;
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+    font-size: inherit;
+    margin-left: 0;
+}
+
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: #fbaf32;
+    font-size: 35px;
+    line-height: 0px;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    transition: .5s;
+    
+}
+
+.navbar .navbar-brand span {
+    color: #f7f7f7;
+}
+
+.navbar .navbar-brand:hover {
+    color: #fbaf32;
+}
+
+.navbar .navbar-brand:hover span {
+    color: #fbaf32;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+    max-height: 40px;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        padding: 30px 60px;
+        background: transparent !important;
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 0px 0px;
+        background: #fbaf32 !important;
+        width: 100%;
+    }
+    
+    .navbar .navbar-brand {
+        color: #fbaf32;
+    }
+    
+    .navbar.nav-sticky .navbar-brand { /* 1 */
+        color: #fbaf32;
+    }
+
+    .navbar-light .navbar-nav .nav-link,
+    .navbar-light .navbar-nav .nav-link:focus {
+        padding: 20px 15px 50px 10px;
+        font-family: 'Nunito', sans-serif;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link,
+    .navbar-light.nav-sticky .navbar-nav .nav-link:focus {
+        color: #503328;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {/* 4 */
+        color: #fbaf32;
+    }
+    
+    .navbar-light.nav-sticky .navbar-nav .nav-link:hover,
+    .navbar-light.nav-sticky .navbar-nav .nav-link.active {
+        color: #ffffff;
+    }
+}
+
+@media (max-width: 991.98px) {   /* cambio de navbar en mobil */
+    .navbar {
+        padding: 15px 32px 0px 15px;
+        background: #fbaf32 !important;
+        
+    }
+    
+    .navbar .navbar-brand {
+        color: #fbaf32;
+        width: 100%;
+      
+    }
+    
+    .navbar .navbar-nav {
+        margin-top: 15px;
+        background: #fbaf32;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+
+/*******************************/
+/********** Hero CSS ***********/
+/*******************************/
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 400px;
+    background:rgba(0, 0, 0, 0.6);
+}
+
+.carousel .container-fluid {
+    padding: 0;
+}
+
+.carousel .carousel-item {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel .carousel-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    overflow: hidden;
+}
+
+.carousel .carousel-img::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.carousel .carousel-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .carousel-text {
+    position: absolute;
+    max-width: 700px;
+    height: calc(100vh - 35px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.carousel .carousel-text h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.carousel .carousel-text h1 span {
+    color: #fbaf32;
+}
+
+.carousel .carousel-text p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+.carousel .carousel-btn .btn:last-child {
+    margin-left: 10px;
+    background: #fbaf32;
+    border-color: #fbaf32;
+}
+
+.carousel .carousel-btn .btn:last-child:hover {
+    color:#fbaf32 ;
+    background: transparent;
+}
+
+.carousel .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@media (max-width: 991.98px) {
+    .carousel,
+    .carousel .carousel-item,
+    .carousel .carousel-text {
+        height: calc(100vh - 105px);
+    }
+    
+    .carousel .carousel-text h1 {
+        font-size: 35px;
+    }
+    
+    .carousel .carousel-text p {
+        font-size: 16px;
+    }
+    
+    .carousel .carousel-text .btn {
+        padding: 12px 30px;
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .carousel,
+    .carousel .carousel-item,
+    .carousel .carousel-text {
+        height: calc(100vh - 70px);
+    }
+    
+    .carousel .carousel-text h1 {
+        font-size: 30px;
+    }
+    
+    .carousel .carousel-text .btn {
+        padding: 10px 25px;
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .carousel .carousel-text h1 {
+        font-size: 25px;
+    }
+    
+    .carousel .carousel-text .btn {
+        padding: 8px 20px;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+}
+
+
+
+

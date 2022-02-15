@@ -1,0 +1,87 @@
+
+.image-wrapper {
+    position: relative;
+    padding-bottom: 30.25%;
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+}
+
+.image-wrapper img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/*codigo de botones */
+button {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: #fbaf32;
+    box-shadow: 0px 15px 20px #fbaf32;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+
+.imageBox input {
+    display: none;
+}
+
+.imageBox label {
+    display: block;
+}
+
+.imageFile {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid grey;
+    background: #fff;
+    color: grey;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 15px;
+}
+
+.imageFile:hover {
+    cursor: pointer;
+    background: grey;
+    color: #fff;
+}
+
+.imageFile i {
+    display: block;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.attached,
+.attached:hover,
+.attached:focus {
+    background: green;
+    color: #fff;
+    border: 1px solid green;
+}
+

@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Luxurious Roman", cursive;
+}
+
+.container-all {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 37px;
+
+}
+.titulo {
+  text-align: center;
+  font-size: 40px;
+  color:#283d50;
+
+}
+.container-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+.container-box a {
+  text-decoration: none;
+  color: rgb(7, 7, 7);
+}
+.box {
+  width: 250px;
+  height: 180px;
+  padding: 20px;
+  margin: 20px;
+  background: rgba(235, 233, 233, 0.432);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 500ms;
+  border-radius: 15%;
+
+}
+.box:hover {/* cambia el color de fondo de cada box */
+  transform: translate(5px, -5px);
+  box-shadow: -30px 30px 20px -10px rgba(7, 7, 7, 0.61);
+}
+.box .icon,
+.box h4,
+.box p {
+  position: relative;
+  z-index: 1;
+  transition: all 200ms;
+}
+.box .icon {
+  /* codigo del icono */
+  font-size: 40px;
+  color: rgb(19, 233, 108);
+  transform: translateY(30px);
+}
+.box:hover .icon {
+  /* cuando pasa con el mouse */
+  color: #fff;
+  font-size: 30px;
+  transform: translateY(0);
+}
+.box h4,
+.box p {
+  margin-top: 10px;
+}
+.box h4 {
+  font-size: 25px;
+  transform: translateY(30px);
+}
+.box:hover h4 {
+  /* cambia de color el titulo cuando se acerca el cursor */
+  transform: translateY(0);
+  color: #fff;
+}
+.box p {
+  font-size: 14;
+  transform: translateY(100px);
+  opacity: 0;
+}
+.box:hover p {
+  transform: translateY(0);
+  opacity: 1;
+  color: #fff;
+}
+
+.box .background-hover {
+  /* cambia de color cuando se acerca el cursor */
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: absolute;
+  top: 250px;
+  left: -170px;
+  border-radius: 100%;
+  transition: all 300ms;
+  background: linear-gradient(to bottom, #fbaf32, #283d50);
+}
+.box:hover .background-hover {
+  /* circulo rojo */
+  width: 400px;
+  height: 400px;
+  top: -70px;
+  left: -70px;
+}
+/* identificador de color de las diferentes cajas */
+.box1 .icon {
+  /* cambiar el color del icono 1 */
+  color: chocolate;
+}
+
+.box1 .background-hover {
+  background: linear-gradient(to bottom, #fbaf32, #fdcb6e);
+}
+/* box 2 */
+.box2 .icon {
+  /* cambiar el color del icono 2 */
+  color: chocolate;
+}
+.box2 .background-hover {
+    background: linear-gradient(to bottom, #fbaf32, #fdcb6e);
+
+  top: -170px;
+  left: -250px;
+}
+
+/* box 3 */
+.box3 .icon {
+  /* cambiar el color del icono 3 */
+  color: burlywood;
+}
+
+.box3 .background-hover {
+    background: linear-gradient(to bottom, #fbaf32, #fdcb6e);
+
+  top: 170px;
+  left: 500px;
+}
+
+/* box 4 */
+.box4 .icon {
+  /* cambiar el color del icono 4 */
+  color: #fbaf32;
+}
+
+.box4 .background-hover {
+    background: linear-gradient(to bottom, #fbaf32, #fdcb6e);
+
+  top: -170px;
+  left: 500px;
+}
+
+/* box 5 */
+.box5 .icon {
+  /* cambiar el color del icono 5 */
+  color: gold;
+}
+
+.box5 .background-hover {
+    background: linear-gradient(to bottom, #fbaf32, #fdcb6e);
+
+}
+/* box 6 */
+.box6 .icon {
+  /* cambiar el color del icono 6 */
+  color: #ff9f1a;
+}
+
+.box6 .background-hover {
+    background: linear-gradient(to bottom, #fbaf32, #fdcb6e);
+
+  top: -170px;
+  left: 500px;
+}
+
+/* box 7 */
+.box7 .icon {
+    /* cambiar el color del icono 5 */
+    color: gold;
+  }
+
+  .box7 .background-hover {
+      background: linear-gradient(to bottom, #fbaf32, #fdcb6e);
+
+  }
